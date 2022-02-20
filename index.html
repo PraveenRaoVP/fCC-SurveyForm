@@ -1,0 +1,76 @@
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/finishline.ico">
+</head>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <h1 id="title-two" class="text-center">for YouTube Channel</h1>
+        <p id="description" class="text-center">Thank you for taking the time for helping me to improve my content in YouTube.</p>
+    </header>
+</div>
+<br>
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" 
+            name="name" 
+            id="name" 
+            class="form-control"
+            placeholder="Enter your name" required>
+        <br>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" 
+            name="email" 
+            id="email" 
+            class="form-control"
+            placeholder="Enter your email" required>
+        <br>
+        <label id="number-label" for="number">Age</label><span class="clue">(optional)</span>
+        <input type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Enter your age"> 
+        </div>
+        <div class="form-group">
+            <p>Which type of content do you like?</p>
+            <select name="content-type" id="dropdown" class=""form-control required>
+                <option disabled selected value>Select preferred content</option>
+                <option value="film-content">Film Industry Content</option>
+                <option value="technology-content">Technology Content</option>
+                <option value="gaming-content">Gaming Content</option>
+                <option value="coding-content">Coding Content</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Live streaming or normal videos?</p>
+            <label><input type="radio" name="content-recommend" value="live-stream" class="input-radio" checked>Live Streams</label>
+            <br>
+            <label><input type="radio" name="content-recommend" value="normal-videos" class="input-radio">Normal Videos</label>
+        </div>
+        <div class="form-group">
+            <p>What kind of content do you want to see more from me?
+                <span class="clue">(Check all that can apply)</span>
+            </p>
+            <label><input type="checkbox" name="prefer" value="gaming-content" class="input-checkbox">  Gaming</label>
+            <br>
+            <label><input type="checkbox" name="prefer" value="coding-content" class="input-checkbox">  Coding</label>
+            <br>
+            <label><input type="checkbox" name="prefer" value="vlogging-content" class="input-checkbox">  Vlogging</label>
+            <br>
+            <label><input type="checkbox" name="prefer" value="entertainment-content" class="input-checkbox">  Entertainment</label>
+        </div>
+        <div class="form-group">
+            <p>Any other suggestions?</p>
+            <textarea name="comments" id="comment" class="input-textarea" cols="30" rows="10">Enter your comments here.</textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
